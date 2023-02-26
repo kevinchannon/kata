@@ -8,7 +8,9 @@ Ten-pin bowling has a slightly complex scoring system (look it up). The aim here
 
 and output a value between 0 and 300 for the score of the game.
 
-Watch out for invalid inputs like "83"; the digits in each pair must sum to <= 0xA.
+Watch out for:
+* invalid inputs like "83"; the digits in each pair must sum to <= 0xA.
+* The last frame is special and can have three throws in it. The first two digits must sum to <= )xA still, but the third digit can be anything in the range [0x0,0xA].
 
 Some examples of the inputs and corresponding outputs might be
 
