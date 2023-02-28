@@ -11,7 +11,7 @@ namespace ca {
   }
 
   State next(State state, Rule rule) {
-    return state;
+    return State(state.size(), EMPTY);
   }
 
 }
